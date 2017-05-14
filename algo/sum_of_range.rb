@@ -4,7 +4,11 @@
 
 def sum_of_range(array)
   sum_of_array = 0
-  sum_of_array = (array[0]..array[1]).sum
+  if array[0] < array[1]
+    sum_of_array = (array[0]..array[1]).sum
+  else
+    sum_of_array = (array[1]..array[0]).sum
+  end
   sum_of_array
 end
 
