@@ -3,7 +3,9 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+  sum_of_array = 0
+  sum_of_array = (array[0]..array[1]).sum
+  sum_of_array
 end
 
 # Driver code - don't touch anything below this line.
